@@ -34,6 +34,10 @@
 #define CLOSE_TIMEOUT              @"closeTimeout"
 #define REMEMBER_PASSWORDS_ENABLED @"rememberPasswordsEnabled"
 #define HIDE_PASSWORDS             @"hidePasswords"
+#define REMOTE_ENABLED             @"remoteEnabled"
+#define REMOTE_URL                 @"remoteUrl"
+#define REMOTE_USERNAME            @"remoteUsername"
+#define REMOTE_PASSWORD            @"remotePassword"
 #define SORT_ALPHABETICALLY        @"sortAlphabetically"
 #define SEARCH_TITLE_ONLY          @"searchTitleOnly"
 #define PASSWORD_ENCODING          @"passwordEncoding"
@@ -125,6 +129,10 @@ static AppSettings *sharedInstance;
         [defaultsDict setValue:[NSNumber numberWithInt:0] forKey:PASSWORD_ENCODING];
         [defaultsDict setValue:[NSNumber numberWithBool:NO] forKey:CLEAR_CLIPBOARD_ENABLED];
         [defaultsDict setValue:[NSNumber numberWithInt:0] forKey:CLEAR_CLIPBOARD_TIMEOUT];
+        [defaultsDict setValue:[NSNumber numberWithBool:NO] forKey:REMOTE_ENABLED];
+        [defaultsDict setValue:@"" forKey:REMOTE_URL];
+        [defaultsDict setValue:@"" forKey:REMOTE_USERNAME];
+        [defaultsDict setValue:@"" forKey:REMOTE_PASSWORD];
         [defaultsDict setValue:[NSNumber numberWithBool:NO] forKey:BACKUP_DISABLED];
         [defaultsDict setValue:[NSNumber numberWithBool:YES] forKey:WEB_BROWSER_INTEGRATED];
         [defaultsDict setValue:[NSNumber numberWithInt:10] forKey:PW_GEN_LENGTH];
@@ -284,6 +292,38 @@ static AppSettings *sharedInstance;
 
 - (void)setCloseEnabled:(BOOL)closeEnabled {
     [userDefaults setBool:closeEnabled forKey:CLOSE_ENABLED];
+}
+
+- (BOOL)remoteEnabled {
+    return [userDefaults boolForKey:REMOTE_ENABLED];
+}
+
+- (void)setRemoteEnabled:(BOOL)remoteEnabled {
+    [userDefaults setBool:remoteEnabled forKey:REMOTE_ENABLED];
+}
+
+- (NSString *)remoteUrl {
+    return [userDefaults stringForKey:REMOTE_URL];
+}
+
+- (void)setRemoteUrl:(NSString *)remoteUrl {
+    return [userDefaults setValue:remoteUrl forKey:REMOTE_URL];
+}
+
+- (NSString *)remoteUsername {
+    return [userDefaults stringForKey:REMOTE_USERNAME];
+}
+
+- (void)setRemoteUsername:(NSString *)remoteUsername {
+    return [userDefaults setValue:remoteUsername forKey:REMOTE_USERNAME];
+}
+
+- (NSString *)remotePassword {
+    return [userDefaults stringForKey:REMOTE_PASSWORD];
+}
+
+- (void)setRemotePassword:(NSString *)remotePassword {
+    return [userDefaults setValue:remotePassword forKey:REMOTE_PASSWORD];
 }
 
 - (BOOL)backupDisabled {

@@ -83,6 +83,8 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Needs FaceID</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Andale Mono.ttf</string>

@@ -76,6 +76,18 @@
 - (BOOL)backupDisabled;
 - (void)setBackupDisabled:(BOOL)backupDisabled;
 
+- (BOOL)remoteEnabled;
+- (void)setRemoteEnabled:(BOOL)remoteEnabled;
+
+- (NSString *)remoteUrl;
+- (void)setRemoteUrl:(NSString *)remoteUrl;
+
+- (NSString *)remoteUsername;
+- (void)setRemoteUsername:(NSString *)remoteUsername;
+
+- (NSString *)remotePassword;
+- (void)setRemotePassword:(NSString *)remotePassword;
+
 - (NSInteger)clearClipboardTimeout;
 - (NSInteger)clearClipboardTimeoutIndex;
 - (void)setClearClipboardTimeoutIndex:(NSInteger)clearClipboardTimeoutIndex;

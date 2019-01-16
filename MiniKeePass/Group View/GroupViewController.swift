@@ -42,8 +42,8 @@ class GroupViewController: UITableViewController, UISearchResultsUpdating {
 
     private var documentInteractionController: UIDocumentInteractionController?
 
-    private var groups: [KdbGroup]!
-    private var entries: [KdbEntry]!
+    var groups: [KdbGroup]!
+    var entries: [KdbEntry]!
 
     private enum KdbItem {
         case group(KdbGroup)
@@ -52,7 +52,7 @@ class GroupViewController: UITableViewController, UISearchResultsUpdating {
     
     private var selectedItem: KdbItem?
     
-    private var searchController: UISearchController?
+    var searchController: UISearchController?
     private var searchResults: [KdbEntry] = []
 
     var parentGroup: KdbGroup! {

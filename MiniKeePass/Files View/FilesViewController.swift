@@ -16,11 +16,14 @@
  */
 
 import UIKit
+import FilesProvider
 
 class FilesViewController: UITableViewController, NewDatabaseDelegate {
     private let databaseReuseIdentifier = "DatabaseCell"
     private let keyFileReuseIdentifier = "KeyFileCell"
-
+    private let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView.init(activityIndicatorStyle: .gray)
+    private let appSettings = AppSettings.sharedInstance()
+    
     private enum Section : Int {
         case databases = 0
         case keyFiles = 1
@@ -33,8 +36,88 @@ class FilesViewController: UITableViewController, NewDatabaseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        activityIndicator.stopAnimating()
+        self.syncToExtension()
         self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: activityIndicator)
     }
+    
+    
+    @IBAction func downloadTapped(_ sender: UIBarButtonItem) {
+        downloadFromRemote()
+    }
+    
+    @IBAction func uploadTapped(_ sender: UIBarButtonItem) {
+        uploadToRemote()
+    }
+    
+    func uploadToRemote(){
+        activityIndicator.startAnimating()
+        let credential = URLCredential(user: (appSettings?.remoteUsername())!, password: (appSettings?.remotePassword())!, persistence: .permanent)
+        let provider = WebDAVFileProvider(baseURL: URL(string: (appSettings?.remoteUrl())!)!, credential: credential)
+        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("keepass.kdbx")
+        
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: fileURL.path) {
+            provider?.copyItem(localFile: fileURL, to: "keepass.kdbx", overwrite: true, completionHandler: {
+                error in
+                DispatchQueue.main.async{
+                    self.activityIndicator.stopAnimating()
+                }
+            })
+        }
+    }
+    
+    func downloadFromRemote(){
+        activityIndicator.startAnimating()
+        let credential = URLCredential(user: (appSettings?.remoteUsername())!, password: (appSettings?.remotePassword())!, persistence: .permanent)
+        let provider = WebDAVFileProvider(baseURL: URL(string: (appSettings?.remoteUrl())!)!, credential: credential)
+        
+        let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("keepass.kdbx")
+        
+        let fileManager = FileManager.default
+        if fileManager.fileExists(atPath: fileURL.path) {
+            do {
+                try fileManager.removeItem(at: fileURL)
+            } catch {
+            
+            }
+        }
+        
+        provider?.copyItem(path: "keepass.kdbx", toLocalURL: fileURL, completionHandler: {
+            error in
+            self.updateFiles()
+            DispatchQueue.main.async{
+                self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
+                self.syncToExtension()
+            }
+        })
+    }
+    
+    func syncToExtension() {
+        let fileManager = FileManager.default
+        let databaseFileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("keepass.kdbx")
+        let keyfileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("keepass.key")
+        let extensionDocuments = fileManager.containerURL(forSecurityApplicationGroupIdentifier: "group.tech.rutschmann.MiniKeePass")!
+        let databaseFileExtURL = extensionDocuments.appendingPathComponent("keepass.kdbx")
+        let keyfileExtURL = extensionDocuments.appendingPathComponent("keepass.key")
+        do {
+            if fileManager.fileExists(atPath: databaseFileExtURL.path){
+                    try fileManager.removeItem(atPath: databaseFileExtURL.path)
+            }
+            try fileManager.copyItem(at: databaseFileURL, to: databaseFileExtURL)
+            
+            if fileManager.fileExists(atPath: keyfileExtURL.path){
+                try fileManager.removeItem(atPath: keyfileExtURL.path)
+            }
+            try fileManager.copyItem(at: keyfileURL, to: keyfileExtURL)
+        } catch {
+            print("Error syncing")
+        }
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         updateFiles();

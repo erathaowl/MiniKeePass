@@ -7,6 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0332722F21C10D2F00776D5A /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0332722E21C10D2F00776D5A /* CredentialProviderViewController.swift */; };
+		0332723721C10D2F00776D5A /* CredentialProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0332722B21C10D2F00776D5A /* CredentialProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0332723D21C1126F00776D5A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332723C21C1126F00776D5A /* AuthenticationServices.framework */; };
+		0332723E21C114DD00776D5A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332723C21C1126F00776D5A /* AuthenticationServices.framework */; };
+		0332725621C1298400776D5A /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68767B641D6F23350039EFE0 /* FilesViewController.swift */; };
+		0332725721C12AE000776D5A /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7F3941D76708000467354 /* GroupViewController.swift */; };
+		0332725821C12AFF00776D5A /* MoveItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFDBE41D7646B400EFACB3 /* MoveItemsViewController.swift */; };
+		0332725921C12B0200776D5A /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFDBE21D7646B400EFACB3 /* GroupCell.swift */; };
+		0332725A21C12C2300776D5A /* RenameDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA68C1D67F93200CF445E /* RenameDatabaseViewController.swift */; };
+		0332725B21C12C4200776D5A /* NewDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA67E1D67F8D500CF445E /* NewDatabaseViewController.swift */; };
+		0332725C21C12C6400776D5A /* RenameItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6895D2E81D68F95D003D8C44 /* RenameItemViewController.swift */; };
+		0332725D21C12C7D00776D5A /* ImageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6771D67F8B500CF445E /* ImageSelectorViewController.swift */; };
+		0332725E21C12C7F00776D5A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6751D67F8B500CF445E /* ImageCell.swift */; };
+		0332725F21C12C8100776D5A /* CheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6741D67F8B500CF445E /* CheckMark.swift */; };
+		0332726021C12E1200776D5A /* UIViewController+AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA67F1D67F8D500CF445E /* UIViewController+AlertController.swift */; };
+		0332726121C12E2700776D5A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68767B681D70B0830039EFE0 /* Array+Extensions.swift */; };
+		0332726221C1309400776D5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689DFFDB13A4273F005EBD36 /* Foundation.framework */; };
+		0332726A21C1332A00776D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D043313A42C81005EBD36 /* AppDelegate.m */; };
+		0332726B21C1333A00776D5A /* DatabaseDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042713A42C81005EBD36 /* DatabaseDocument.m */; };
+		0332726C21C1334300776D5A /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 68496E721AB34F8800370876 /* AppSettings.m */; };
+		0332726E21C1338100776D5A /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042913A42C81005EBD36 /* DatabaseManager.m */; };
+		0332726F21C1338800776D5A /* ImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE981AB272BD005CB6BD /* ImageFactory.m */; };
+		0332729B21C133E500776D5A /* PasswordEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA66F1D67F88500CF445E /* PasswordEntryViewController.swift */; };
+		0332729C21C133E800776D5A /* KeyFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA66D1D67F88500CF445E /* KeyFileViewController.swift */; };
+		0332729D21C1343F00776D5A /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02B813A42B63005EBD36 /* Base64.m */; };
+		0332729E21C1343F00776D5A /* DDXMLDocument+MKPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 680C277516050C7A009403DE /* DDXMLDocument+MKPAdditions.m */; };
+		0332729F21C1343F00776D5A /* Kdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02C813A42B63005EBD36 /* Kdb.m */; };
+		033272A021C1343F00776D5A /* Kdb3Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02CA13A42B63005EBD36 /* Kdb3Date.m */; };
+		033272A121C1343F00776D5A /* Kdb3Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02CC13A42B63005EBD36 /* Kdb3Node.m */; };
+		033272A221C1343F00776D5A /* Kdb3Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D213A42B63005EBD36 /* Kdb3Reader.m */; };
+		033272A321C1343F00776D5A /* Kdb3Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 685D9D941603F8EE00D739D3 /* Kdb3Utils.m */; };
+		033272A421C1343F00776D5A /* Kdb3Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D413A42B63005EBD36 /* Kdb3Writer.m */; };
+		033272A521C1343F00776D5A /* Kdb4Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D613A42B63005EBD36 /* Kdb4Node.m */; };
+		033272A621C1343F00776D5A /* Kdb4Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02D813A42B63005EBD36 /* Kdb4Parser.m */; };
+		033272A721C1343F00776D5A /* Kdb4Persist.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DA13A42B63005EBD36 /* Kdb4Persist.m */; };
+		033272A821C1343F00776D5A /* Kdb4Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DC13A42B63005EBD36 /* Kdb4Reader.m */; };
+		033272A921C1343F00776D5A /* Kdb4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02DE13A42B63005EBD36 /* Kdb4Writer.m */; };
+		033272AA21C1343F00776D5A /* KdbPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E113A42B63005EBD36 /* KdbPassword.m */; };
+		033272AB21C1343F00776D5A /* KdbReaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E413A42B63005EBD36 /* KdbReaderFactory.m */; };
+		033272AC21C1343F00776D5A /* KdbWriterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02E713A42B63005EBD36 /* KdbWriterFactory.m */; };
+		033272AD21C1343F00776D5A /* RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 689A4D1214046B8200AA897D /* RandomStream.m */; };
+		033272AE21C1343F00776D5A /* Salsa20RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02EC13A42B63005EBD36 /* Salsa20RandomStream.m */; };
+		033272AF21C1343F00776D5A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F013A42B63005EBD36 /* Utils.m */; };
+		033272B021C1343F00776D5A /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F213A42B63005EBD36 /* UUID.m */; };
+		033272B121C1357E00776D5A /* AesInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F21603883900156830 /* AesInputStream.m */; };
+		033272B221C1357E00776D5A /* AesOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F41603883900156830 /* AesOutputStream.m */; };
+		033272B321C1357E00776D5A /* Arc4RandomStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F61603883900156830 /* Arc4RandomStream.m */; };
+		033272B421C1357E00776D5A /* DataInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44F81603883900156830 /* DataInputStream.m */; };
+		033272B521C1357E00776D5A /* DataOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FA1603883900156830 /* DataOutputStream.m */; };
+		033272B621C1357E00776D5A /* FileInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FC1603883900156830 /* FileInputStream.m */; };
+		033272B721C1357E00776D5A /* FileOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D44FE1603883900156830 /* FileOutputStream.m */; };
+		033272B821C1357E00776D5A /* GZipInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45001603883900156830 /* GZipInputStream.m */; };
+		033272B921C1357E00776D5A /* GZipOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45021603883900156830 /* GZipOutputStream.m */; };
+		033272BA21C1357E00776D5A /* HashedInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45041603883900156830 /* HashedInputStream.m */; };
+		033272BB21C1357E00776D5A /* HashedOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45061603883900156830 /* HashedOutputStream.m */; };
+		033272BC21C1357E00776D5A /* InputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D45081603883900156830 /* InputStream.m */; };
+		033272BD21C1357E00776D5A /* OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D450A1603883900156830 /* OutputStream.m */; };
+		033272BE21C1357E00776D5A /* Sha256OutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D450C1603883900156830 /* Sha256OutputStream.m */; };
+		033272BF21C1359400776D5A /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F613A42B63005EBD36 /* DDXMLElementAdditions.m */; };
+		033272C021C1359400776D5A /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02F913A42B63005EBD36 /* NSString+DDXML.m */; };
+		033272C121C1359400776D5A /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02FC13A42B63005EBD36 /* DDXMLDocument.m */; };
+		033272C221C1359400776D5A /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D02FE13A42B63005EBD36 /* DDXMLElement.m */; };
+		033272C321C1359400776D5A /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D030013A42B63005EBD36 /* DDXMLNode.m */; };
+		033272C521C135E400776D5A /* KeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE751AB27228005CB6BD /* KeychainUtils.m */; };
+		033272C621C135E400776D5A /* PasswordUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE771AB27228005CB6BD /* PasswordUtils.m */; };
+		033272C721C1364B00776D5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 689DFFE613A4273F005EBD36 /* main.m */; };
+		033272C821C1365600776D5A /* ImageButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE7F1AB27283005CB6BD /* ImageButtonCell.m */; };
+		033272C921C1365600776D5A /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE871AB27283005CB6BD /* TextFieldCell.m */; };
+		033272CA21C1365600776D5A /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE891AB27283005CB6BD /* TextViewCell.m */; };
+		033272CB21C1365600776D5A /* KeypadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5B1AB271C6005CB6BD /* KeypadButton.m */; };
+		033272CC21C1365600776D5A /* KeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5D1AB271C6005CB6BD /* KeypadView.m */; };
+		033272CD21C1365600776D5A /* LockScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE5F1AB271C6005CB6BD /* LockScreenManager.m */; };
+		033272CE21C1365600776D5A /* PinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689FBE631AB271C6005CB6BD /* PinViewController.m */; };
+		033272CF21C136C500776D5A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6921D67F94600CF445E /* SettingsViewController.swift */; };
+		033272D021C136C800776D5A /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6901D67F94600CF445E /* SelectionViewController.swift */; };
+		033272D121C136D200776D5A /* PasswordGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6861D67F90800CF445E /* PasswordGeneratorViewController.swift */; };
+		033272D221C136D500776D5A /* CharacterSetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689EA6841D67F90800CF445E /* CharacterSetsViewController.swift */; };
+		033272D321C136EB00776D5A /* HelpWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C9D7B1D69EB540040FB43 /* HelpWebViewController.swift */; };
+		033272D421C136EE00776D5A /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680C9D761D69E2A70040FB43 /* HelpViewController.swift */; };
+		033272D521C136F700776D5A /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689D042B13A42C81005EBD36 /* EntryViewController.m */; };
+		033272D621C136FB00776D5A /* CustomFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6895D2F21D68FE00003D8C44 /* CustomFieldViewController.swift */; };
+		033272D721C1374800776D5A /* WebBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688038961D6BB33A001424CA /* WebBrowserViewController.swift */; };
+		033272D821C1376700776D5A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0332726321C130B400776D5A /* libxml2.tbd */; };
+		033272DA21C138BF00776D5A /* PasswordEntry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272D921C138BF00776D5A /* PasswordEntry.storyboard */; };
+		033272DB21C149AD00776D5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522D8F9D17E35B0E00BCA329 /* Images.xcassets */; };
+		033272DC21C149B100776D5A /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529708AD14FEEFD3003547FB /* Andale Mono.ttf */; };
+		033272DE21C14ABA00776D5A /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272DD21C14ABA00776D5A /* Help.storyboard */; };
+		033272DF21C14B0A00776D5A /* fr-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168E16B3E871004195A1 /* fr-createdb.html */; };
+		033272E021C14B0A00776D5A /* fr-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168F16B3E871004195A1 /* fr-dropbox.html */; };
+		033272E121C14B0A00776D5A /* fr-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169016B3E871004195A1 /* fr-itunes.html */; };
+		033272E221C14B0A00776D5A /* fr-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169116B3E871004195A1 /* fr-keyfiles.html */; };
+		033272E321C14B0A00776D5A /* fr-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169216B3E871004195A1 /* fr-safariemail.html */; };
+		033272E421C14B0D00776D5A /* ru-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4715B59C880029F979 /* ru-createdb.html */; };
+		033272E521C14B0D00776D5A /* ru-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4815B59C880029F979 /* ru-dropbox.html */; };
+		033272E621C14B0D00776D5A /* ru-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4915B59C890029F979 /* ru-itunes.html */; };
+		033272E721C14B0D00776D5A /* ru-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4A15B59C890029F979 /* ru-keyfiles.html */; };
+		033272E821C14B0D00776D5A /* ru-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52E43F4B15B59C890029F979 /* ru-safariemail.html */; };
+		033272E921C14B1000776D5A /* de-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0714D8F3FB00F8CBC8 /* de-createdb.html */; };
+		033272EA21C14B1000776D5A /* de-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0814D8F3FB00F8CBC8 /* de-dropbox.html */; };
+		033272EB21C14B1000776D5A /* de-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0914D8F3FB00F8CBC8 /* de-itunes.html */; };
+		033272EC21C14B1000776D5A /* de-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0A14D8F3FB00F8CBC8 /* de-keyfiles.html */; };
+		033272ED21C14B1000776D5A /* de-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */; };
+		033272EE21C14B1300776D5A /* createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52A177BB13EB698E00CEEFCE /* createdb.html */; };
+		033272EF21C14B1300776D5A /* dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 689D021413A42B63005EBD36 /* dropbox.html */; };
+		033272F021C14B1300776D5A /* itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 689D021513A42B63005EBD36 /* itunes.html */; };
+		033272F121C14B1300776D5A /* keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 68DDC3721405160300FC8BD8 /* keyfiles.html */; };
+		033272F221C14B1300776D5A /* safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 68CE37F41404A86600E4A5E1 /* safariemail.html */; };
+		033272F321C14B1300776D5A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 689D021613A42B63005EBD36 /* style.css */; };
+		033272F521C1533300776D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272F421C1533200776D5A /* Main.storyboard */; };
+		033272FF21C154B500776D5A /* WebBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272F621C154B500776D5A /* WebBrowser.storyboard */; };
+		0332730021C154B500776D5A /* RenameItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272F721C154B500776D5A /* RenameItem.storyboard */; };
+		0332730121C154B500776D5A /* NewDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272F821C154B500776D5A /* NewDatabase.storyboard */; };
+		0332730221C154B500776D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272F921C154B500776D5A /* LaunchScreen.storyboard */; };
+		0332730321C154B500776D5A /* RenameDatabase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272FA21C154B500776D5A /* RenameDatabase.storyboard */; };
+		0332730421C154B500776D5A /* CustomField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272FB21C154B500776D5A /* CustomField.storyboard */; };
+		0332730521C154B500776D5A /* ImageSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272FC21C154B500776D5A /* ImageSelector.storyboard */; };
+		0332730621C154B500776D5A /* PasswordGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272FD21C154B500776D5A /* PasswordGenerator.storyboard */; };
+		0332730721C154B500776D5A /* MoveItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033272FE21C154B500776D5A /* MoveItems.storyboard */; };
+		0332730921C155B000776D5A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0332730821C155B000776D5A /* Settings.storyboard */; };
+		0332730B21C1581600776D5A /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0332730A21C1581600776D5A /* TextFieldCell.xib */; };
+		03F3341221C198A400D40255 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F3341021C198A400D40255 /* MainInterface.storyboard */; };
+		03F3341421C1990A00D40255 /* GroupViewControllerMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F3341321C1990A00D40255 /* GroupViewControllerMod.swift */; };
 		4E8C169316B3E871004195A1 /* fr-createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168E16B3E871004195A1 /* fr-createdb.html */; };
 		4E8C169416B3E871004195A1 /* fr-dropbox.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C168F16B3E871004195A1 /* fr-dropbox.html */; };
 		4E8C169516B3E871004195A1 /* fr-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C169016B3E871004195A1 /* fr-itunes.html */; };
@@ -18,7 +140,6 @@
 		52491D0E14D8F3FB00F8CBC8 /* de-itunes.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0914D8F3FB00F8CBC8 /* de-itunes.html */; };
 		52491D0F14D8F3FB00F8CBC8 /* de-keyfiles.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0A14D8F3FB00F8CBC8 /* de-keyfiles.html */; };
 		52491D1014D8F3FB00F8CBC8 /* de-safariemail.html in Resources */ = {isa = PBXBuildFile; fileRef = 52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */; };
-		526D9FAD167CDC2E0097213E /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526D9FAB167CDC010097213E /* libMBProgressHUD.a */; };
 		5271A98D1ED7CA3E00B9AF2C /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5271A98C1ED7CA3E00B9AF2C /* TextFieldCell.xib */; };
 		529708B014FEF149003547FB /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529708AD14FEEFD3003547FB /* Andale Mono.ttf */; };
 		52A177BC13EB698E00CEEFCE /* createdb.html in Resources */ = {isa = PBXBuildFile; fileRef = 52A177BB13EB698E00CEEFCE /* createdb.html */; };
@@ -133,19 +254,62 @@
 		68E08316146F2749001C4EDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68E08314146F2749001C4EDF /* InfoPlist.strings */; };
 		68EA62DB1CC972F300B33E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68EA62DA1CC972F300B33E42 /* LaunchScreen.storyboard */; };
 		68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68EBC2D51613394D00E8E799 /* QuartzCore.framework */; };
+		8E65DEDF3AD21142C966A1F4 /* Pods_MiniKeePass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3768BAB9AB0F951742100A5E /* Pods_MiniKeePass.framework */; };
+		B3A9FCA1507F656557BA5E39 /* Pods_CredentialProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EFE0F28AB0C3F7D2F6AFA5 /* Pods_CredentialProvider.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		526D9FAA167CDC010097213E /* PBXContainerItemProxy */ = {
+		0332723521C10D2F00776D5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 526D9FA3167CDC010097213E /* MBProgressHUD.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D286A7491518C70F00E13FB8;
-			remoteInfo = MBProgressHUD;
+			containerPortal = 689DFFCC13A4273F005EBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0332722A21C10D2F00776D5A;
+			remoteInfo = CredentialProvider;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0332723B21C10D2F00776D5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0332723721C10D2F00776D5A /* CredentialProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0332722B21C10D2F00776D5A /* CredentialProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CredentialProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0332722E21C10D2F00776D5A /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
+		0332723321C10D2F00776D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0332723421C10D2F00776D5A /* CredentialProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CredentialProvider.entitlements; sourceTree = "<group>"; };
+		0332723C21C1126F00776D5A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		0332725521C128C700776D5A /* MiniKeePass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MiniKeePass-Bridging-Header.h"; path = "MiniKeePass/MiniKeePass-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		0332726321C130B400776D5A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0332726521C1322100776D5A /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		0332726721C1323200776D5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		033272D921C138BF00776D5A /* PasswordEntry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PasswordEntry.storyboard; path = "MiniKeePass/Password Entry View/PasswordEntry.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272DD21C14ABA00776D5A /* Help.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Help.storyboard; path = "MiniKeePass/Help View/Help.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272F421C1533200776D5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = MiniKeePass/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		033272F621C154B500776D5A /* WebBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WebBrowser.storyboard; path = "MiniKeePass/Web Browser View/WebBrowser.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272F721C154B500776D5A /* RenameItem.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RenameItem.storyboard; path = "MiniKeePass/Rename Item View/RenameItem.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272F821C154B500776D5A /* NewDatabase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewDatabase.storyboard; path = "MiniKeePass/New Database View/NewDatabase.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272F921C154B500776D5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "MiniKeePass/Supporting Files/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272FA21C154B500776D5A /* RenameDatabase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RenameDatabase.storyboard; path = "MiniKeePass/Rename Database View/RenameDatabase.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272FB21C154B500776D5A /* CustomField.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CustomField.storyboard; path = "MiniKeePass/Custom Field View/CustomField.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272FC21C154B500776D5A /* ImageSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ImageSelector.storyboard; path = "MiniKeePass/Image Selector View/ImageSelector.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272FD21C154B500776D5A /* PasswordGenerator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PasswordGenerator.storyboard; path = "MiniKeePass/Password Generator View/PasswordGenerator.storyboard"; sourceTree = SOURCE_ROOT; };
+		033272FE21C154B500776D5A /* MoveItems.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoveItems.storyboard; path = "MiniKeePass/Move Items View/MoveItems.storyboard"; sourceTree = SOURCE_ROOT; };
+		0332730821C155B000776D5A /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = "MiniKeePass/Settings View/Settings.storyboard"; sourceTree = SOURCE_ROOT; };
+		0332730A21C1581600776D5A /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldCell.xib; path = MiniKeePass/Cells/TextFieldCell.xib; sourceTree = SOURCE_ROOT; };
+		03F3341121C198A400D40255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		03F3341321C1990A00D40255 /* GroupViewControllerMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewControllerMod.swift; sourceTree = "<group>"; };
+		3768BAB9AB0F951742100A5E /* Pods_MiniKeePass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniKeePass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EFE0F28AB0C3F7D2F6AFA5 /* Pods_CredentialProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CredentialProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8C168E16B3E871004195A1 /* fr-createdb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fr-createdb.html"; sourceTree = "<group>"; };
 		4E8C168F16B3E871004195A1 /* fr-dropbox.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fr-dropbox.html"; sourceTree = "<group>"; };
 		4E8C169016B3E871004195A1 /* fr-itunes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fr-itunes.html"; sourceTree = "<group>"; };
@@ -163,7 +327,6 @@
 		52491D0914D8F3FB00F8CBC8 /* de-itunes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "de-itunes.html"; sourceTree = "<group>"; };
 		52491D0A14D8F3FB00F8CBC8 /* de-keyfiles.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "de-keyfiles.html"; sourceTree = "<group>"; };
 		52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "de-safariemail.html"; sourceTree = "<group>"; };
-		526D9FA3167CDC010097213E /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		5271A98C1ED7CA3E00B9AF2C /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
 		529708AD14FEEFD3003547FB /* Andale Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale Mono.ttf"; sourceTree = "<group>"; };
 		529BED9E14D7CD8600618250 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -346,7 +509,6 @@
 		689FBE971AB272BD005CB6BD /* ImageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFactory.h; sourceTree = "<group>"; };
 		689FBE981AB272BD005CB6BD /* ImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFactory.m; sourceTree = "<group>"; };
 		68A7F3941D76708000467354 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
-		68AB0F4D1CCA82B300CFE78D /* MiniKeePass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MiniKeePass-Bridging-Header.h"; path = "../MiniKeePass-Bridging-Header.h"; sourceTree = "<group>"; };
 		68BFDBE21D7646B400EFACB3 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		68BFDBE31D7646B400EFACB3 /* MoveItems.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoveItems.storyboard; sourceTree = "<group>"; };
 		68BFDBE41D7646B400EFACB3 /* MoveItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveItemsViewController.swift; sourceTree = "<group>"; };
@@ -359,37 +521,79 @@
 		68E0831C146F2D37001C4EDF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68EA62DA1CC972F300B33E42 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68EBC2D51613394D00E8E799 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		707993B88C5AEAA8EC164598 /* Pods-CredentialProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CredentialProvider.release.xcconfig"; path = "Pods/Target Support Files/Pods-CredentialProvider/Pods-CredentialProvider.release.xcconfig"; sourceTree = "<group>"; };
+		B54DA269EBED78D1F57B761C /* Pods-MiniKeePass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKeePass.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass.release.xcconfig"; sourceTree = "<group>"; };
+		B5E94E90C08B8CE76434A9B9 /* Pods-CredentialProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CredentialProvider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CredentialProvider/Pods-CredentialProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		BDB0FF5D194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text; name = nl; path = nl.lproj/AppStore.txt; sourceTree = "<group>"; };
 		BDB0FF5E194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDB0FF5F194C7C6F00C44DEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C9CE4DEF1F2C47970028266A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text; name = tr; path = tr.lproj/AppStore.txt; sourceTree = "<group>"; };
 		C9CE4DF01F2C47980028266A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9CE4DF11F2C47980028266A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D85C97080003870D31901514 /* Pods-MiniKeePass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniKeePass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD785BA15B3D02600B9A276 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EFD785BB15B3D03F00B9A276 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0332722821C10D2F00776D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033272D821C1376700776D5A /* libxml2.tbd in Frameworks */,
+				0332726221C1309400776D5A /* Foundation.framework in Frameworks */,
+				0332723E21C114DD00776D5A /* AuthenticationServices.framework in Frameworks */,
+				B3A9FCA1507F656557BA5E39 /* Pods_CredentialProvider.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689DFFD213A4273F005EBD36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526D9FAD167CDC2E0097213E /* libMBProgressHUD.a in Frameworks */,
 				689D000D13A42765005EBD36 /* AudioToolbox.framework in Frameworks */,
 				689DFFDE13A4273F005EBD36 /* CoreGraphics.framework in Frameworks */,
 				689DFFDC13A4273F005EBD36 /* Foundation.framework in Frameworks */,
 				6802C36F1A425D7300595AC9 /* LocalAuthentication.framework in Frameworks */,
+				0332723D21C1126F00776D5A /* AuthenticationServices.framework in Frameworks */,
 				68EBC2D61613394D00E8E799 /* QuartzCore.framework in Frameworks */,
 				689D000F13A42777005EBD36 /* Security.framework in Frameworks */,
 				689DFFDA13A4273F005EBD36 /* UIKit.framework in Frameworks */,
 				689D001113A4277E005EBD36 /* libxml2.dylib in Frameworks */,
 				689D001313A42784005EBD36 /* libz.dylib in Frameworks */,
+				8E65DEDF3AD21142C966A1F4 /* Pods_MiniKeePass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0332722D21C10D2F00776D5A /* CredentialProvider */ = {
+			isa = PBXGroup;
+			children = (
+				0332730A21C1581600776D5A /* TextFieldCell.xib */,
+				0332730821C155B000776D5A /* Settings.storyboard */,
+				033272FB21C154B500776D5A /* CustomField.storyboard */,
+				033272FC21C154B500776D5A /* ImageSelector.storyboard */,
+				033272F921C154B500776D5A /* LaunchScreen.storyboard */,
+				033272FE21C154B500776D5A /* MoveItems.storyboard */,
+				033272F821C154B500776D5A /* NewDatabase.storyboard */,
+				033272FD21C154B500776D5A /* PasswordGenerator.storyboard */,
+				033272FA21C154B500776D5A /* RenameDatabase.storyboard */,
+				033272F721C154B500776D5A /* RenameItem.storyboard */,
+				033272F621C154B500776D5A /* WebBrowser.storyboard */,
+				033272F421C1533200776D5A /* Main.storyboard */,
+				033272DD21C14ABA00776D5A /* Help.storyboard */,
+				033272D921C138BF00776D5A /* PasswordEntry.storyboard */,
+				03F3341021C198A400D40255 /* MainInterface.storyboard */,
+				0332722E21C10D2F00776D5A /* CredentialProviderViewController.swift */,
+				0332723321C10D2F00776D5A /* Info.plist */,
+				0332723421C10D2F00776D5A /* CredentialProvider.entitlements */,
+				03F3341321C1990A00D40255 /* GroupViewControllerMod.swift */,
+			);
+			path = CredentialProvider;
+			sourceTree = "<group>";
+		};
 		4E8C168D16B3E871004195A1 /* fr */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,14 +616,6 @@
 				52491D0B14D8F3FB00F8CBC8 /* de-safariemail.html */,
 			);
 			path = de;
-			sourceTree = "<group>";
-		};
-		526D9FA4167CDC010097213E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				526D9FAB167CDC010097213E /* libMBProgressHUD.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5271A98E1EDA16D200B9AF2C /* Entry View */ = {
@@ -661,10 +857,11 @@
 				682D44F01603883900156830 /* IOStream */,
 				689D02B013A42B63005EBD36 /* KeePassLib */,
 				689D02F313A42B63005EBD36 /* KissXML */,
+				0332722D21C10D2F00776D5A /* CredentialProvider */,
 				689DFFD813A4273F005EBD36 /* Frameworks */,
 				689D041413A42B85005EBD36 /* Resources */,
 				689DFFD613A4273F005EBD36 /* Products */,
-				526D9FA3167CDC010097213E /* MBProgressHUD.xcodeproj */,
+				6E8D72F25801876E17A332C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -672,6 +869,7 @@
 			isa = PBXGroup;
 			children = (
 				689DFFD513A4273F005EBD36 /* MiniKeePass.app */,
+				0332722B21C10D2F00776D5A /* CredentialProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -679,6 +877,10 @@
 		689DFFD813A4273F005EBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0332726721C1323200776D5A /* libz.tbd */,
+				0332726521C1322100776D5A /* libz.1.dylib */,
+				0332726321C130B400776D5A /* libxml2.tbd */,
+				0332723C21C1126F00776D5A /* AuthenticationServices.framework */,
 				6802C36E1A425D7300595AC9 /* LocalAuthentication.framework */,
 				689D000C13A42765005EBD36 /* AudioToolbox.framework */,
 				689DFFDD13A4273F005EBD36 /* CoreGraphics.framework */,
@@ -688,6 +890,8 @@
 				689DFFD913A4273F005EBD36 /* UIKit.framework */,
 				689D001013A4277E005EBD36 /* libxml2.dylib */,
 				689D001213A42784005EBD36 /* libz.dylib */,
+				3768BAB9AB0F951742100A5E /* Pods_MiniKeePass.framework */,
+				39EFE0F28AB0C3F7D2F6AFA5 /* Pods_CredentialProvider.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -733,7 +937,7 @@
 				68E08314146F2749001C4EDF /* InfoPlist.strings */,
 				68EA62DA1CC972F300B33E42 /* LaunchScreen.storyboard */,
 				68E0830E146F24E3001C4EDF /* Localizable.strings */,
-				68AB0F4D1CCA82B300CFE78D /* MiniKeePass-Bridging-Header.h */,
+				0332725521C128C700776D5A /* MiniKeePass-Bridging-Header.h */,
 				689DFFE113A4273F005EBD36 /* MiniKeePass-Info.plist */,
 				689DFFE513A4273F005EBD36 /* MiniKeePass-Prefix.pch */,
 				689DFFE613A4273F005EBD36 /* main.m */,
@@ -744,8 +948,8 @@
 		689EA66C1D67F88500CF445E /* Password Entry View */ = {
 			isa = PBXGroup;
 			children = (
-				689EA66D1D67F88500CF445E /* KeyFileViewController.swift */,
 				689EA66E1D67F88500CF445E /* PasswordEntry.storyboard */,
+				689EA66D1D67F88500CF445E /* KeyFileViewController.swift */,
 				689EA66F1D67F88500CF445E /* PasswordEntryViewController.swift */,
 			);
 			path = "Password Entry View";
@@ -862,21 +1066,54 @@
 			path = "Move Items View";
 			sourceTree = "<group>";
 		};
+		6E8D72F25801876E17A332C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D85C97080003870D31901514 /* Pods-MiniKeePass.debug.xcconfig */,
+				B54DA269EBED78D1F57B761C /* Pods-MiniKeePass.release.xcconfig */,
+				B5E94E90C08B8CE76434A9B9 /* Pods-CredentialProvider.debug.xcconfig */,
+				707993B88C5AEAA8EC164598 /* Pods-CredentialProvider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		689DFFD413A4273F005EBD36 /* MiniKeePass */ = {
+		0332722A21C10D2F00776D5A /* CredentialProvider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 689D000613A42740005EBD36 /* Build configuration list for PBXNativeTarget "MiniKeePass" */;
+			buildConfigurationList = 0332723821C10D2F00776D5A /* Build configuration list for PBXNativeTarget "CredentialProvider" */;
 			buildPhases = (
-				689DFFD113A4273F005EBD36 /* Sources */,
-				689DFFD213A4273F005EBD36 /* Frameworks */,
-				68C17C9C1A3E1774008DD56B /* Increment Build Number */,
-				689DFFD313A4273F005EBD36 /* Resources */,
+				73F88E9DFC7ABC38ABB00DC5 /* [CP] Check Pods Manifest.lock */,
+				0332722721C10D2F00776D5A /* Sources */,
+				0332722821C10D2F00776D5A /* Frameworks */,
+				0332722921C10D2F00776D5A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = CredentialProvider;
+			productName = CredentialProvider;
+			productReference = 0332722B21C10D2F00776D5A /* CredentialProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		689DFFD413A4273F005EBD36 /* MiniKeePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689D000613A42740005EBD36 /* Build configuration list for PBXNativeTarget "MiniKeePass" */;
+			buildPhases = (
+				DE0B7D25AF17FD2453B63497 /* [CP] Check Pods Manifest.lock */,
+				689DFFD113A4273F005EBD36 /* Sources */,
+				689DFFD213A4273F005EBD36 /* Frameworks */,
+				68C17C9C1A3E1774008DD56B /* Increment Build Number */,
+				689DFFD313A4273F005EBD36 /* Resources */,
+				C49E814CD40FC0BC4EAB5996 /* [CP] Embed Pods Frameworks */,
+				0332723B21C10D2F00776D5A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0332723621C10D2F00776D5A /* PBXTargetDependency */,
 			);
 			name = MiniKeePass;
 			productName = MiniKeePass;
@@ -889,14 +1126,37 @@
 		689DFFCC13A4273F005EBD36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Self;
 				TargetAttributes = {
-					689DFFD413A4273F005EBD36 = {
-						DevelopmentTeam = G9ZT7943FZ;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Manual;
+					0332722A21C10D2F00776D5A = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = P6EL3TWYD5;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					689DFFD413A4273F005EBD36 = {
+						DevelopmentTeam = P6EL3TWYD5;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 0;
 							};
@@ -920,34 +1180,65 @@
 				pt,
 				nl,
 				tr,
+				Base,
 			);
 			mainGroup = 689DFFCA13A4273F005EBD36;
 			productRefGroup = 689DFFD613A4273F005EBD36 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 526D9FA4167CDC010097213E /* Products */;
-					ProjectRef = 526D9FA3167CDC010097213E /* MBProgressHUD.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				689DFFD413A4273F005EBD36 /* MiniKeePass */,
+				0332722A21C10D2F00776D5A /* CredentialProvider */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		526D9FAB167CDC010097213E /* libMBProgressHUD.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMBProgressHUD.a;
-			remoteRef = 526D9FAA167CDC010097213E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
+		0332722921C10D2F00776D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033272DF21C14B0A00776D5A /* fr-createdb.html in Resources */,
+				0332730B21C1581600776D5A /* TextFieldCell.xib in Resources */,
+				0332730621C154B500776D5A /* PasswordGenerator.storyboard in Resources */,
+				033272EB21C14B1000776D5A /* de-itunes.html in Resources */,
+				033272ED21C14B1000776D5A /* de-safariemail.html in Resources */,
+				033272DB21C149AD00776D5A /* Images.xcassets in Resources */,
+				033272DC21C149B100776D5A /* Andale Mono.ttf in Resources */,
+				033272E921C14B1000776D5A /* de-createdb.html in Resources */,
+				033272F521C1533300776D5A /* Main.storyboard in Resources */,
+				033272E421C14B0D00776D5A /* ru-createdb.html in Resources */,
+				0332730921C155B000776D5A /* Settings.storyboard in Resources */,
+				033272EA21C14B1000776D5A /* de-dropbox.html in Resources */,
+				033272F221C14B1300776D5A /* safariemail.html in Resources */,
+				0332730121C154B500776D5A /* NewDatabase.storyboard in Resources */,
+				0332730721C154B500776D5A /* MoveItems.storyboard in Resources */,
+				033272E621C14B0D00776D5A /* ru-itunes.html in Resources */,
+				033272DE21C14ABA00776D5A /* Help.storyboard in Resources */,
+				0332730021C154B500776D5A /* RenameItem.storyboard in Resources */,
+				033272EC21C14B1000776D5A /* de-keyfiles.html in Resources */,
+				033272DA21C138BF00776D5A /* PasswordEntry.storyboard in Resources */,
+				033272F121C14B1300776D5A /* keyfiles.html in Resources */,
+				0332730221C154B500776D5A /* LaunchScreen.storyboard in Resources */,
+				033272E721C14B0D00776D5A /* ru-keyfiles.html in Resources */,
+				033272E321C14B0A00776D5A /* fr-safariemail.html in Resources */,
+				033272E021C14B0A00776D5A /* fr-dropbox.html in Resources */,
+				033272FF21C154B500776D5A /* WebBrowser.storyboard in Resources */,
+				033272EF21C14B1300776D5A /* dropbox.html in Resources */,
+				0332730421C154B500776D5A /* CustomField.storyboard in Resources */,
+				033272E521C14B0D00776D5A /* ru-dropbox.html in Resources */,
+				0332730521C154B500776D5A /* ImageSelector.storyboard in Resources */,
+				033272E121C14B0A00776D5A /* fr-itunes.html in Resources */,
+				033272F021C14B1300776D5A /* itunes.html in Resources */,
+				033272E221C14B0A00776D5A /* fr-keyfiles.html in Resources */,
+				03F3341221C198A400D40255 /* MainInterface.storyboard in Resources */,
+				033272EE21C14B1300776D5A /* createdb.html in Resources */,
+				033272F321C14B1300776D5A /* style.css in Resources */,
+				0332730321C154B500776D5A /* RenameDatabase.storyboard in Resources */,
+				033272E821C14B0D00776D5A /* ru-safariemail.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689DFFD313A4273F005EBD36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1011,9 +1302,151 @@
 			shellPath = /bin/sh;
 			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
+		73F88E9DFC7ABC38ABB00DC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CredentialProvider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49E814CD40FC0BC4EAB5996 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FilesProvider/FilesProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FilesProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniKeePass/Pods-MiniKeePass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE0B7D25AF17FD2453B63497 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniKeePass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0332722721C10D2F00776D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033272D321C136EB00776D5A /* HelpWebViewController.swift in Sources */,
+				0332729C21C133E800776D5A /* KeyFileViewController.swift in Sources */,
+				033272B621C1357E00776D5A /* FileInputStream.m in Sources */,
+				033272B221C1357E00776D5A /* AesOutputStream.m in Sources */,
+				033272CB21C1365600776D5A /* KeypadButton.m in Sources */,
+				0332726F21C1338800776D5A /* ImageFactory.m in Sources */,
+				033272BF21C1359400776D5A /* DDXMLElementAdditions.m in Sources */,
+				0332726E21C1338100776D5A /* DatabaseManager.m in Sources */,
+				033272B321C1357E00776D5A /* Arc4RandomStream.m in Sources */,
+				033272D021C136C800776D5A /* SelectionViewController.swift in Sources */,
+				033272AF21C1343F00776D5A /* Utils.m in Sources */,
+				033272A321C1343F00776D5A /* Kdb3Utils.m in Sources */,
+				033272A121C1343F00776D5A /* Kdb3Node.m in Sources */,
+				033272CE21C1365600776D5A /* PinViewController.m in Sources */,
+				033272A921C1343F00776D5A /* Kdb4Writer.m in Sources */,
+				0332726C21C1334300776D5A /* AppSettings.m in Sources */,
+				0332726B21C1333A00776D5A /* DatabaseDocument.m in Sources */,
+				0332726A21C1332A00776D5A /* AppDelegate.m in Sources */,
+				033272BE21C1357E00776D5A /* Sha256OutputStream.m in Sources */,
+				0332725C21C12C6400776D5A /* RenameItemViewController.swift in Sources */,
+				033272AC21C1343F00776D5A /* KdbWriterFactory.m in Sources */,
+				0332729E21C1343F00776D5A /* DDXMLDocument+MKPAdditions.m in Sources */,
+				033272BB21C1357E00776D5A /* HashedOutputStream.m in Sources */,
+				033272B121C1357E00776D5A /* AesInputStream.m in Sources */,
+				033272C321C1359400776D5A /* DDXMLNode.m in Sources */,
+				033272CF21C136C500776D5A /* SettingsViewController.swift in Sources */,
+				0332729F21C1343F00776D5A /* Kdb.m in Sources */,
+				033272A521C1343F00776D5A /* Kdb4Node.m in Sources */,
+				033272B021C1343F00776D5A /* UUID.m in Sources */,
+				0332725B21C12C4200776D5A /* NewDatabaseViewController.swift in Sources */,
+				033272CD21C1365600776D5A /* LockScreenManager.m in Sources */,
+				033272C221C1359400776D5A /* DDXMLElement.m in Sources */,
+				033272CC21C1365600776D5A /* KeypadView.m in Sources */,
+				0332725E21C12C7F00776D5A /* ImageCell.swift in Sources */,
+				033272D121C136D200776D5A /* PasswordGeneratorViewController.swift in Sources */,
+				033272A821C1343F00776D5A /* Kdb4Reader.m in Sources */,
+				033272C821C1365600776D5A /* ImageButtonCell.m in Sources */,
+				033272A021C1343F00776D5A /* Kdb3Date.m in Sources */,
+				0332729D21C1343F00776D5A /* Base64.m in Sources */,
+				0332726121C12E2700776D5A /* Array+Extensions.swift in Sources */,
+				033272BC21C1357E00776D5A /* InputStream.m in Sources */,
+				033272D521C136F700776D5A /* EntryViewController.m in Sources */,
+				033272D621C136FB00776D5A /* CustomFieldViewController.swift in Sources */,
+				033272A621C1343F00776D5A /* Kdb4Parser.m in Sources */,
+				033272AD21C1343F00776D5A /* RandomStream.m in Sources */,
+				0332725F21C12C8100776D5A /* CheckMark.swift in Sources */,
+				033272A421C1343F00776D5A /* Kdb3Writer.m in Sources */,
+				033272D221C136D500776D5A /* CharacterSetsViewController.swift in Sources */,
+				033272C621C135E400776D5A /* PasswordUtils.m in Sources */,
+				0332725921C12B0200776D5A /* GroupCell.swift in Sources */,
+				0332729B21C133E500776D5A /* PasswordEntryViewController.swift in Sources */,
+				033272A721C1343F00776D5A /* Kdb4Persist.m in Sources */,
+				0332725821C12AFF00776D5A /* MoveItemsViewController.swift in Sources */,
+				0332722F21C10D2F00776D5A /* CredentialProviderViewController.swift in Sources */,
+				03F3341421C1990A00D40255 /* GroupViewControllerMod.swift in Sources */,
+				0332726021C12E1200776D5A /* UIViewController+AlertController.swift in Sources */,
+				033272B521C1357E00776D5A /* DataOutputStream.m in Sources */,
+				033272C721C1364B00776D5A /* main.m in Sources */,
+				033272C021C1359400776D5A /* NSString+DDXML.m in Sources */,
+				033272B921C1357E00776D5A /* GZipOutputStream.m in Sources */,
+				033272AB21C1343F00776D5A /* KdbReaderFactory.m in Sources */,
+				033272B421C1357E00776D5A /* DataInputStream.m in Sources */,
+				0332725D21C12C7D00776D5A /* ImageSelectorViewController.swift in Sources */,
+				033272C921C1365600776D5A /* TextFieldCell.m in Sources */,
+				033272BD21C1357E00776D5A /* OutputStream.m in Sources */,
+				0332725A21C12C2300776D5A /* RenameDatabaseViewController.swift in Sources */,
+				033272B721C1357E00776D5A /* FileOutputStream.m in Sources */,
+				033272D421C136EE00776D5A /* HelpViewController.swift in Sources */,
+				033272C521C135E400776D5A /* KeychainUtils.m in Sources */,
+				033272D721C1374800776D5A /* WebBrowserViewController.swift in Sources */,
+				033272BA21C1357E00776D5A /* HashedInputStream.m in Sources */,
+				0332725621C1298400776D5A /* FilesViewController.swift in Sources */,
+				033272A221C1343F00776D5A /* Kdb3Reader.m in Sources */,
+				033272AE21C1343F00776D5A /* Salsa20RandomStream.m in Sources */,
+				0332725721C12AE000776D5A /* GroupViewController.swift in Sources */,
+				033272AA21C1343F00776D5A /* KdbPassword.m in Sources */,
+				033272C121C1359400776D5A /* DDXMLDocument.m in Sources */,
+				033272B821C1357E00776D5A /* GZipInputStream.m in Sources */,
+				033272CA21C1365600776D5A /* TextViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		689DFFD113A4273F005EBD36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1100,7 +1533,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0332723621C10D2F00776D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0332722A21C10D2F00776D5A /* CredentialProvider */;
+			targetProxy = 0332723521C10D2F00776D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		03F3341021C198A400D40255 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F3341121C198A400D40255 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		687AAA991889F8B400AB8AC5 /* AppStore.txt */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1157,6 +1606,87 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0332723921C10D2F00776D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E94E90C08B8CE76434A9B9 /* Pods-CredentialProvider.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CredentialProvider/CredentialProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P6EL3TWYD5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CredentialProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.rutschmann.MiniKeePass.CredentialProvider;
+				PRODUCT_MODULE_NAME = CredentialProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniKeePass/MiniKeePass-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MiniKeePass-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0332723A21C10D2F00776D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 707993B88C5AEAA8EC164598 /* Pods-CredentialProvider.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CredentialProvider/CredentialProvider.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P6EL3TWYD5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CredentialProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.rutschmann.MiniKeePass.CredentialProvider;
+				PRODUCT_MODULE_NAME = CredentialProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MiniKeePass/MiniKeePass-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "MiniKeePass-Swift.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
 		689D000413A42740005EBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1262,22 +1792,25 @@
 		};
 		689D000713A42740005EBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85C97080003870D31901514 /* Pods-MiniKeePass.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MiniKeePass/MiniKeePass.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9ZT7943FZ;
+				DEVELOPMENT_TEAM = P6EL3TWYD5;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jflan.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.rutschmann.MiniKeePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5443260a-ff69-4503-8b4b-2b598dc5db88";
-				PROVISIONING_PROFILE_SPECIFIER = "Flush Software Development: *";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MiniKeePass/MiniKeePass-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -1288,21 +1821,25 @@
 		};
 		689D000813A42740005EBD36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54DA269EBED78D1F57B761C /* Pods-MiniKeePass.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = MiniKeePass/MiniKeePass.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G9ZT7943FZ;
+				DEVELOPMENT_TEAM = P6EL3TWYD5;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "MiniKeePass/MiniKeePass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jflan.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.rutschmann.MiniKeePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5443260a-ff69-4503-8b4b-2b598dc5db88";
-				PROVISIONING_PROFILE_SPECIFIER = "Flush Software Development: *";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MiniKeePass/MiniKeePass-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -1313,6 +1850,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0332723821C10D2F00776D5A /* Build configuration list for PBXNativeTarget "CredentialProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0332723921C10D2F00776D5A /* Debug */,
+				0332723A21C10D2F00776D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		689D000613A42740005EBD36 /* Build configuration list for PBXNativeTarget "MiniKeePass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

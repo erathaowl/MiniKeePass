@@ -19,7 +19,7 @@ import UIKit
 import AudioToolbox
 import LocalAuthentication
 
-class SettingsViewController: UITableViewController, PinViewControllerDelegate {
+class SettingsViewController: UITableViewController, PinViewControllerDelegate, UITextFieldDelegate {
     @IBOutlet weak var pinEnabledSwitch: UISwitch!
     @IBOutlet weak var pinLockTimeoutCell: UITableViewCell!
     
@@ -45,6 +45,10 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
     
     @IBOutlet weak var clearClipboardEnabledSwitch: UISwitch!
     @IBOutlet weak var clearClipboardTimeoutCell: UITableViewCell!
+    @IBOutlet weak var remoteEnabledSwitch: UISwitch!
+    @IBOutlet weak var remoteUrlCell: TextFieldCell!
+    @IBOutlet weak var remoteUsernameCell: TextFieldCell!
+    @IBOutlet weak var remotePasswordCell: TextFieldCell!
     
     @IBOutlet weak var excludeFromBackupsEnabledSwitch: UISwitch!
     
@@ -122,6 +126,11 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
 
             searchTitleOnlySwitch.isOn = appSettings.searchTitleOnly()
             
+            remoteEnabledSwitch.isOn = appSettings.remoteEnabled()
+            remoteUrlCell.textField.text = appSettings.remoteUrl()
+            remoteUsernameCell.textField.text = appSettings.remoteUsername()
+            remotePasswordCell.textField.text = appSettings.remotePassword()
+            
             passwordEncodingCell.detailTextLabel!.text = passwordEncodings[appSettings.passwordEncodingIndex()]
             
             clearClipboardEnabledSwitch.isOn = appSettings.clearClipboardEnabled()
@@ -135,6 +144,10 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
         // Update which controls are enabled
         updateEnabledControls()
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     fileprivate func updateEnabledControls() {
         guard let appSettings = appSettings else {
@@ -142,6 +155,7 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
         }
         
         let pinEnabled = appSettings.pinEnabled()
+        let remoteEnabled = appSettings.remoteEnabled()
         let deleteOnFailureEnabled = appSettings.deleteOnFailureEnabled()
         let closeEnabled = appSettings.closeEnabled()
         let clearClipboardEnabled = appSettings.clearClipboardEnabled()
@@ -154,6 +168,9 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
         setCellEnabled(deleteAllDataAttemptsCell, enabled: pinEnabled && deleteOnFailureEnabled)
         setCellEnabled(closeDatabaseTimeoutCell, enabled: closeEnabled)
         setCellEnabled(clearClipboardTimeoutCell, enabled: clearClipboardEnabled)
+        setCellEnabled(remoteUrlCell, enabled: remoteEnabled)
+        setCellEnabled(remoteUsernameCell, enabled: remoteEnabled)
+        setCellEnabled(remotePasswordCell, enabled: remoteEnabled)
     }
     
     fileprivate func setCellEnabled(_ cell: UITableViewCell, enabled: Bool) {
@@ -282,7 +299,20 @@ class SettingsViewController: UITableViewController, PinViewControllerDelegate {
     @IBAction func searchTitleOnlyChanged(_ sender: UISwitch) {
         self.appSettings?.setSearchTitleOnly(searchTitleOnlySwitch.isOn)
     }
-
+    
+    @IBAction func remoteEnabledChanged(_ sender: UISwitch) {
+        self.appSettings?.setRemoteEnabled(remoteEnabledSwitch.isOn)
+    }
+    
+    @IBAction func remoteUrlChanged(_ sender: UITextField) {
+        self.appSettings?.setRemoteUrl(remoteUrlCell.textField.text)
+    }
+    @IBAction func remoteUsernameChanged(_ sender: UITextField) {
+        self.appSettings?.setRemoteUsername(remoteUsernameCell.textField.text)
+    }
+    @IBAction func remotePasswordChanged(_ sender: UITextField) {
+        self.appSettings?.setRemotePassword(remotePasswordCell.textField.text)
+    }
     @IBAction func clearClipboardEnabledChanged(_ sender: UISwitch) {
         self.appSettings?.setClearClipboardEnabled(clearClipboardEnabledSwitch.isOn)
         
