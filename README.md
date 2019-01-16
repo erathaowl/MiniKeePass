@@ -1,5 +1,15 @@
-MiniKeePass
+MiniKeePass - Joshs Fork (beta)
 ===========
+## Additional Features
+- **iOS 12 AutoFill**
+- **WebDav** You have a button for down- and upload on the main page. (No merging logic yet)
+- **FaceID Support** Instead of only TouchID (yes only needs one line config ^^)
+
+Everything works as I like it but it is still a prototype.
+
+![AutoFill in Safari](https://rutschmann.tech/wp-content/uploads/2019/01/autofill-1-e1547667057190.jpg)
+![WebDav Settings](https://rutschmann.tech/wp-content/uploads/2019/01/ftpsettings-e1547665921935.png)
+![AutoFill Settings in iOS Settings](https://rutschmann.tech/wp-content/uploads/2019/01/IMG_2107-e1547667864307.png)
 
 MiniKeePass provides secure password storage on your phone that's compatible with KeePass.
 
